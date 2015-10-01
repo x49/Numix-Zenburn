@@ -2,6 +2,8 @@ A zenburned fork of Numix, a modern flat theme with a combination of light and d
 
 Numix is a part of the [Numix Project](http://numixproject.org).
 
+![numix zenburn color theme](numix-zenburn.png?raw=true)
+
 ### Manual installation
 
 First, you need to compile the theme using the [Sass](http://sass-lang.com/) compiler.
