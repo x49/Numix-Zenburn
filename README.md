@@ -1,18 +1,17 @@
-A zenburned fork of Numix, a modern flat theme with a combination of light and dark elements. It supports Gnome, Unity, XFCE and Openbox.
+#### A zenburned fork of Numix.
 
-Numix is a part of the [Numix Project](http://numixproject.org).
-
+Numix is a modern flat theme with a combination of light and dark elements. It supports GNOME, Unity, Xfce and Openbox.
 ![numix zenburn color theme](numix-zenburn.png?raw=true)
 
 ### Manual installation
 
 First, you need to compile the theme using the [Sass](http://sass-lang.com/) compiler.
 
-To install Sass, install ruby and the gem command using your distro's package manager. Then install `sass` with the `gem` command,
+To install Sass, install Ruby and the gem command using your distribution's package manager. Then install `sass` with the `gem` command,
 
 `gem install sass`
 
-You'll also need the following commands in your path to generate the gresource binary. Install them using your distro's package manager.
+You'll also need the following commands in your path to generate the gresource binary. Install them using your distribution's package manager.
 
 * `glib-compile-schemas`
 * `gdk-pixbuf-pixdata`
@@ -24,7 +23,7 @@ make
 sudo make install
 ```
 
-To set the theme in Gnome, run the following commands in Terminal,
+To set the theme in GNOME, run the following commands in Terminal,
 
 ```sh
 gsettings set org.gnome.desktop.interface gtk-theme "Numix"
@@ -38,8 +37,10 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Numix"
 xfconf-query -c xfwm4 -p /general/theme -s "Numix"
 ```
 
-### For developers
+### For contributors
+Start by reviewing the [guidelines for contributing](https://github.com/numixproject/numix-gtk-theme/blob/master/.github/CONTRIBUTING.md).
 
+#### For developers
 If you want to hack on the theme, make sure you have the `inotifywait` command available, which is used for watching and automatically building the files.
 
 To start watching for changes, run the following,
@@ -58,6 +59,6 @@ Murrine theme engine
 
 ### Code and license
 
-Report bugs or contribute at [GitHub](https://github.com/shimmerproject/Numix)
+Report bugs or contribute at [GitHub](https://github.com/numixproject/numix-gtk-theme)
 
 License: GPL-3.0+
